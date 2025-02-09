@@ -1,0 +1,7 @@
+debug/
+target/
+.svelte-kit/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+node_modules/
