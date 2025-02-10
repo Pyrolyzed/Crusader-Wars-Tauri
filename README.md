@@ -1,6 +1,7 @@
-# Crusader Wars ported to Tauri
-Crusader Wars is an amazing mod for CK3, but sadly, it's not cross-platform. This project aims to fix that by porting it to [Tauri](https://v2.tauri.app/).
+# Tauri + SvelteKit + TypeScript
 
-All credit for the original idea and code structure goes to [FarayC](https://github.com/farayC).
+This template should help get you started developing with Tauri, SvelteKit and TypeScript in Vite.
 
-Original Project: [Crusader Wars](https://github.com/farayC/Crusader-Wars)
+## Recommended IDE Setup
+
+[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
