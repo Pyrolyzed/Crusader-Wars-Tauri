@@ -15,10 +15,6 @@
     return isValid;
   }
 
-  async function playButtonPressed(event: Event) {
-    let success = await invoke("play", { });
-  }
-
   async function getAttilaRunning() {
     let isRunning = await invoke("is_attila_running", { });
     isAttilaRunning = isRunning;
@@ -49,6 +45,23 @@
       directory: false,
     });
     return result;
+  }
+
+  async function playButtonPressed(event: Event) {
+    if (!verifyGamePaths()) {
+      return;
+    }
+
+    if (getAttilaRunning()) {
+      await invoke("close_attila", { });
+    }
+
+    let isRunning = await getCkRunning();
+    if (!isRunning) {
+      await invoke("launch_crusader_kings", { });
+    }
+
+    await invoke("wait_for_battle_start", { });
   }
 </script>
 

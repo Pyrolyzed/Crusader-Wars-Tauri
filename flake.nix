@@ -28,7 +28,6 @@
 	    pkg-config
 	    gobject-introspection
 	    cargo
-	    cargo-tauri
 	    nodejs
 	    rustc
 	  ];
